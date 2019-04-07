@@ -33,6 +33,13 @@ class BinaryTree:
         return self.key
 
 
+def tree_height(root):
+    if root:
+        return 1 + max(tree_height(root.getLeftChild()), tree_height(root.getRightChild()))
+    else:
+        return -1
+
+
 if __name__ == "__main__":
     r = BinaryTree('a')
     r.insertLeft('b')
@@ -44,3 +51,4 @@ if __name__ == "__main__":
     print(r.getRightChild().getRootVal())
     print(r.getLeftChild().getRightChild().getRootVal())
     print(r.getRightChild().getLeftChild().getRootVal())
+    print(tree_height(r))
