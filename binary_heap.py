@@ -49,3 +49,12 @@ class minHeap:
         while i > 0:
             self.percDown(i)
             i -= 1
+
+
+heap = minHeap()
+heap.insert(4)
+heap.insert(9)
+heap.insert(10)
+heap.insert(11)
+heap.insert(5)
+print(heap.heapList)

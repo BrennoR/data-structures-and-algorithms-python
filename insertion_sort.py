@@ -11,5 +11,5 @@ def insertion_sort(arr):
     return arr
 
 
-test_arr = [1, 5, 2, 7, 48, 12, 443, 0, 3, 8, 4, 6]
+test_arr = [11, 5, 2, 7, 48, 12, 443, 0, 3, 8, 4, 6]
 print(insertion_sort(test_arr))
